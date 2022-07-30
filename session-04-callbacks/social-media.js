@@ -8,8 +8,7 @@ const {
 
 const firstPost = (username, password, callback) => {
 
-  authenticate(username, password, (errorAuth, token) => {
-    
+  authenticate(username, password, (errorAuth, token) => { 
     if (errorAuth) {
       callback(errorAuth)
       return
